@@ -1,75 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Foro en Línea</title>
-
-  <!-- Añadir scripts de Firebase para la versión no modular -->
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Baile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-        
-        
-           <header>
-   
-        <h1>Fútbol Total</h1>
-        <nav>
-            <a href="/noticias.html">Noticias</a>
-            <a href="/estadísticas.html">Estadísticas</a>
-            <a href="/horarios.html">Horarios</a>
-            
-              <a href="/FORO.html">FORO</a>
-            <a href="/Desarrolladores de ma página.html">Creadores</a>
-            
-      
-          
-        </header> 
-        
-
-        
 <body>
-  
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <div class="container">
+          
+            <img src="/Logo.png" alt="" class="logo-1"> <div class="logo">Academia<span> Dance</span></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Inicio.html">Inicio</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
+                    <li><a href="/instructores.html">Instructores</a></li>
+                 
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/registro.html" class="btn-primary">Inscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-   
+    <!-- Sección Hero -->
+    <section class="hero">
+        <div class="overlay">
+            <h1>Descubre el arte de la danza</h1>
+            <p>Academia de baile para todas las edades y niveles</p> <br>
+            <div class="hero-buttons">
+              
+                <a href="/registro.html" class="btn-secondary">Registrate</a>
+                
+              
+                
+                
+                
+                
+            </div>
+        </div>
+    </section>
 
-     
-   
-  <div id="auth">
-      <center>
-   
-   <h1>Registrate o inicia Seción</h1>
-  </center>
-   <section>
-    <form id="login-form">
-      <input type="email" id="email" placeholder="Correo" required>
-      <input type="password" id="password" placeholder="Contraseña" required>
-      <button type="submit">Iniciar Sesión</button>
-    </form> <br>
-    <button id="register-btn">Registrarse</button>
-  </div>
-</section>
-  <div id="forum" class="hidden">
-    
-    <center>
-    <h1>Bienvenido al Foro</h1>
-    
-    </center>
-    <form id="post-form">
-      <textarea id="post-content" placeholder="Escribe tu publicación..." required></textarea>
-      <input type="file" id="post-image">
-      <button type="submit">Publicar</button>
-    </form>
-    <div id="posts"></div>
-    <button id="logout-btn">Cerrar Sesión</button>
-  </div>
+    <!-- Sección Cursos -->
+    <section id="cursos" class="cursos">
+        <h2 class="h-2"   >Nuestros Cursos</h2>
+        <div class="cursos-container">
+            <div class="curso">
+                <img src="/Ballet.jpg" alt="Ballet">
+                <h3>Ballet</h3>
+                <p>Aprende la técnica y elegancia del ballet.</p>
+                <a href="/ballet.html" class="btn-secondary">Más Información</a>
+            </div>
+            <div class="curso">
+                <img src="/hip-hop.jpg" alt="Hip-Hop">
+                <h3>Hip-Hop</h3>
+                <p>Explora movimientos urbanos y freestyle.</p>
+                <a href="/hip-hop.html" class="btn-secondary">Más Información</a>
+            </div>
+            <div class="curso">
+                <img src="/Salsa.jpg" alt="Salsa">
+                <h3>Salsa</h3>
+                <p>Baila al ritmo de la música latina.</p>
+                <a href="/salsa.html" class="btn-secondary">Más Información</a>
+            </div>
+        </div>
+    </section>
+<center>
   
+                <a href="/instructores.html" class="btn-secondary2">instructores</a>
+           
+           
+             
+                <a href="/contacto.html" class="btn-secondary2">contacto</a>
+
+           
+</center>     
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Academia Dance. Todos los derechos reservados.</p>
+            <ul class="footer-links">
+                <li><a href="#">Políticas de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
-<script src="/main.js"></script>
-
 </html>
