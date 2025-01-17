@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css" type="text/css" media="all" />
+    <title>Registro Academia de Baile</title>
+  
+    <!-- Añadir scripts de Firebase para la versión no modular -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <style>
+       .herof{
+    height: 100vh;
+    background: url('/registro.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+       .boto{
+         
+        display: none; 
+         
+       } 
+        
+        
+        .label, input, select, button {
+            margin: 10px 0;
+            width: 100%;
+            padding: 10px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        
+    </style>
+</head>
+<body>
+  <header class="navbar">
+        <div class="container">
+          
+            <img src="/Logo.png" alt="" class="logo-1"> <div class="logo">Academia<span> Dance</span></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/Inicio.html">Inicio</a></li>
+                    <li><a href="/cursos.html">Cursos</a></li>
+                    <li><a href="/instructores.html">Instructores</a></li>
+                 
+                    <li><a href="/contacto.html">Contacto</a></li>
+                    <li><a href="/registro.html" class="btn-primary">Inscribirse</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="herof">
+        
+  
+
+    <div class="container2">
+        <h2>Registro Academia de Baile</h2>
+        
+        <button id="showUsersBtn2"  class="boto"  style="margin-top: 20px;">cerrar lista</button>
+
+        <form id="registerForm">
+            <label for="username">Nombre y Apellido</label>
+            <input type="text" id="username" placeholder="Nombre y Apellido" required>
+
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+
+            <label for="gender">Género de Baile</label>
+            <select id="gender" required>
+                <option value="ballet">Ballet</option>
+                <option value="salsa">Salsa</option>
+                <option value="hiphop">Hip-Hop</option>
+            </select>
+
+            <label for="age">Edad</label>
+            <input type="number" id="age" placeholder="Edad" required>
+
+            <label for="experience">Experiencia Previa (opcional)</label>
+            <input type="text" id="experience" placeholder="Experiencia previa en baile">
+
+            <button type="submit">Registrar</button>
+            
+            
+            
+            
+            <!-- Botón para ver registrados -->
+
+        </form>
+       
+<button id="showUsersBtn"  style="margin-top: 20px;">Ver Registrados</button>
+
+
+    </div>
+
+
+
+
+
+<!-- Añadir esto después del formulario para mostrar los usuarios -->
+<div id="usersList" class="curso" style="display:none;">
+  <h3>Usuarios Registrados</h3>
+  <!-- Los usuarios registrados serán mostrados aquí -->
+</div>
+
+<!-- Botón para ver registrados -->
+
+
+
+
+   <script src="/logica.js"></script>  
+    </section>
+</body>
+</html>
