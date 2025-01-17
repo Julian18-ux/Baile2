@@ -1,0 +1,463 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores principales */
+:root {
+    --color-primary: #FF5675;
+    --color-secondary: #56C1FF;
+    --color-neutral: #F5F5F5;
+    --color-dark: #2E2E2E;
+}
+
+/* Estilo del cuerpo */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: var(--color-neutral);
+    color: var(--color-dark);
+}
+
+/* Navbar */
+.navbar {
+    background: #fff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--color-primary);
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin: 0 10px;
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: var(--color-dark);
+    transition: color 0.3s;
+}
+
+.navbar .menu li a:hover {
+    color: var(--color-primary);
+}
+
+.navbar .btn-primary {
+    background: var(--color-primary);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.navbar .btn-primary:hover {
+    background: var(--color-dark);
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('/Hero.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    margin: 5px;
+}
+
+/* Cursos */
+.cursos {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cursos-container {
+ display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+h2{
+  
+  color: white;
+  
+  
+}
+
+
+.h-2{
+  
+  
+color: black;  
+  
+}
+.curso {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.curso:hover {
+    transform: translateY(-10px);
+}
+
+.curso img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.curso h3 {
+    margin: 15px 0;
+    color: var(--color-primary);
+}
+
+.curso p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    text-decoration: none;
+    color: var(--color-primary);
+    padding: 8px 15px;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+
+
+
+.btn-secondary2 {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: 2px solid var(--color-primary);
+   background: #9C089BC7;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+}
+
+.btn-secondary2:hover {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+
+
+
+
+
+
+/* Footer */
+.footer {
+    background: var(--color-dark);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    color: #fff;
+}
+
+/* Media Queries para Hacer Responsive */
+
+/* Pantallas pequeñas (móviles y tablets en orientación vertical) */
+@media (max-width: 768px) {
+  .tarjeta{
+     width: 95%; /* Hacer las tarjetas un poco más anchas en pantallas pequeñas */
+    padding: 15px; /* Menos espacio interior para adaptarse mejor */
+  }
+
+  .imagen-carnet {
+    width: 70px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    height: 90px;
+  }
+   
+   
+   
+     
+  
+  
+  
+  .hero3 img{
+    
+    width: 130px;
+    
+    
+    
+  }
+  
+  
+  
+  
+    /* Navbar */
+    
+    
+    
+    
+    
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .navbar .menu.active {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    /* Cursos */
+    .cursos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .curso {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+    
+     .foro {
+        font-size: 10px; /* Tamaño de texto menor */
+        margin: 10px auto; /* Espaciado menor entre elementos */
+ height: 50px;
+ 
+ 
+    }
+
+    .container2 {
+        max-width: 100%; /* Usar todo el ancho disponible */
+        padding: 5px;
+    }
+
+ .hero{
+   
+   height: 150vh;
+   
+ }
+ 
+
+
+#crs{
+  
+display: table-row;
+
+font-size: 5px;
+justify-content: space-between;
+
+width: 25%
+  
+}
+ 
+    
+}
+
+
+
+/* botónes*/
+
+
+.btn-secondary2 {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: 2px solid var(--color-primary);
+   background: #9C089BC7;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+    
+    display: column;
+    width: 150px;
+    
+}
+
+
+
+
+
+/* Pantallas más grandes (tablets, laptops y de escritorio) */
+@media (min-width: 769px) {
+  
+  
+    .imagen-carnet {
+  width: 250px; /* Tamaño adecuado para la imagen */
+  height: 250px; /* Tamaño de la imagen tipo carnet */
+  border-radius: 5px; /* Bordes redondeados para un look más pulido */
+  display: block;
+  margin-top: 15px; /* Separación para la imagen */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  
+  
+.tarjeta {
+  background-color: white; /* Fondo blanco */
+  border: 1px solid black; /* Borde negro fino */
+  margin-bottom: 20px; /* Separación entre tarjetas */
+  padding: 15px; /* Espaciado interior de la tarjeta */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave para efecto de tarjeta */
+  border-radius: 8px; /* Bordes redondeados */
+  height:30vh;
+  width: 300px; /* Ancho de la tarjeta */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tarjeta:nth-child(1) {
+  margin-top: 20px; /* Separación desde el principio */
+}
+
+.tarjeta:nth-child(2) {
+  /* Sección 2 */
+}
+
+.tarjeta:nth-child(3) {
+  /* Sección 3 */
+  margin-bottom: 0; /* Sin separación en la última sección */
+}
+   
+  
+  
+  
+  
+  .btn-secondary2 {
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    border: 2px solid var(--color-primary);
+   background: #9C089BC7;
+    border-radius: 5px;
+    transition: 0.3s;
+    
+    display: none;
+}
+
+    .navbar .menu {
+        display: flex;
+    }
+
+    .cursos-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .curso {
+        width: 30%;
+    }
+    
+   .foro{
+  
+background: #fff;
+    border: 2px solid black;
+    height: 50%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    transition: 0.3s;  
+  
+} 
+
+ .container2 {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 3px solid black;
+        }
+  
+
+
+
+
+
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+
+.logo-1{
+  
+
+  font-weight: bold;
+   width: 100px;
+  
+}
+
+
+
