@@ -346,13 +346,10 @@ width: 25%
   
   
     .imagen-carnet {
-  width: 50px; /* Tamaño adecuado para la imagen */
-  height: 50px; /* Tamaño de la imagen tipo carnet */
+  width: 150px; /* Tamaño adecuado para la imagen */
+  height: 150px; /* Tamaño de la imagen tipo carnet */
   border-radius: 5px; /* Bordes redondeados para un look más pulido */
-  display: block;
-  margin-top: 15px; /* Separación para la imagen */
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 
   
