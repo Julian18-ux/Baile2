@@ -218,6 +218,15 @@ color: black;
 
 /* Pantallas pequeñas (móviles y tablets en orientación vertical) */
 @media (max-width: 768px) {
+
+
+      .whas{
+   
+    width: 25px ;
+    height:25px ;
+    
+      }
+    
   .tarjeta{
      width: 95%; /* Hacer las tarjetas un poco más anchas en pantallas pequeñas */
     padding: 15px; /* Menos espacio interior para adaptarse mejor */
