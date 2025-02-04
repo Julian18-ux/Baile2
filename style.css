@@ -344,7 +344,13 @@ width: 25%
 /* Pantallas más grandes (tablets, laptops y de escritorio) */
 @media (min-width: 769px) {
   
-  
+    .whas{
+   
+    width: 25px ;
+    height:25px ;
+    
+    }
+    
     .imagen-carnet {
   width: 150px; /* Tamaño adecuado para la imagen */
   height: 150px; /* Tamaño de la imagen tipo carnet */
